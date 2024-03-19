@@ -1,0 +1,4026 @@
+/* all elements */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* FONTS STARTS here */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"),
+    url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Branding Aliskaje";
+  src: url("../fonts/BrandingAliskaje.woff2") format("woff2"),
+    url("../fonts/BrandingAliskaje.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brand";
+  src: url("../fonts/Brand.woff2") format("woff2"),
+    url("../fonts/Brand.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quinstory";
+  src: url("../fonts/Quinstory-Regular.woff2") format("woff2"),
+    url("../fonts/Quinstory-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* all section padding form left and right */
+.main-padding {
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+/* header css */
+header {
+  background: #fff;
+  padding: 4px 220px 3px;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 234px;
+}
+
+.header-mobile-logo {
+  display: none;
+}
+
+.header-logo a {
+  display: inline-block;
+}
+
+ul#menu {
+  width: 100%;
+  max-width: 406px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar-nav li a {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s ease-in-out;
+}
+
+header .navbar-nav li .active {
+  background: #f3688a;
+  border-radius: 6px;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+header .navbar-nav li a:hover {
+  color: #f3688a;
+}
+
+.header-btn {
+  width: 100%;
+  max-width: 391px;
+  display: flex;
+  justify-content: end;
+}
+
+.header-btn a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s ease-in-out;
+}
+
+.header-btn a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.header-btn select {
+  width: 100%;
+  max-width: 94px;
+}
+
+/* header css end*/
+
+/* BANNER CSS */
+.banner {
+  background-image: url(../img/Hero.png);
+  height: calc(100vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 118px;
+}
+
+.banner-head {
+  width: 100%;
+  max-width: 652px;
+}
+
+.banner-head h1 {
+  color: #101010;
+  font-family: "Branding Aliskaje";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.banner-head p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.7%;
+  width: 100%;
+  max-width: 415px;
+  margin-bottom: 50px;
+}
+
+.banner-btn {
+  width: 100%;
+  max-width: 354px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 137px;
+}
+
+.banner-btn img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.banner-btn p {
+  color: #f3688a;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.7%;
+  margin-left: -11px;
+}
+
+.banner-btn a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.banner-btn a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.banner-counter {
+  width: 100%;
+  max-width: 710px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 137px;
+}
+
+.banner-counter-inner:last-child {
+  border-right: unset;
+  padding-right: unset;
+}
+
+.banner-counter-inner:first-child {
+  padding-left: unset;
+}
+
+.banner-counter-inner {
+  padding: 0px 27px;
+  border-right: 1px solid #707070;
+}
+
+.banner-counter-inner h6 {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+}
+
+.banner-counter-inner p {
+  color: #707070;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 405px;
+  display: flex;
+  padding-top: 24px;
+  border-top: 1px solid #707070;
+}
+
+.banner-content .fa {
+  font-size: 20px;
+  color: #f3688a;
+  margin-right: 20px;
+}
+
+.banner-content p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.7%;
+}
+
+.banner-right-conent {
+  width: 100%;
+  max-width: 312px;
+  margin-left: auto;
+}
+
+.banner-right-image {
+  width: 100%;
+  max-width: 20px;
+  margin-bottom: 10px;
+}
+
+.banner-right-conent p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+}
+
+/* ABOUT CSS */
+.about {
+  padding-top: 100px;
+  padding-bottom: 112px;
+}
+
+.about-line {
+  width: 100%;
+  max-width: 192px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-line-image {
+  width: 100%;
+  max-width: 45px;
+  margin-right: 20px;
+}
+
+.about-line p {
+  color: #f3688a;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.7%;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 592px;
+}
+
+.about h2 {
+  color: #101010;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-bottom: 39px;
+}
+
+.about-right {
+  padding-left: 24px;
+  padding-top: 165px;
+}
+
+.about-right h2 {
+  color: #101010;
+  font-family: "Quinstory";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.about-right p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  line-height: 130%;
+}
+
+.about-right p span {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+.about-right a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s ease-in-out;
+}
+
+.about-right a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+/* BOOKING CSS */
+.booking {
+  background-image: url(../img/booking.png);
+  height: calc(100vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.booking-request h2 {
+  color: #101010;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+}
+
+.booking-form {
+  padding-top: 43px;
+}
+
+.booking-form h2 {
+  color: #101010;
+  font-family: "Quinstory";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 9px;
+}
+
+.booking-form p {
+  color: #707070;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 142%;
+}
+
+.booking-form-data {
+  width: 100%;
+  max-width: 496px;
+  margin-top: 35px;
+}
+
+input,
+select::placeholder {
+  color: #707070;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.5%;
+}
+
+select {
+  padding: 13px 20px;
+}
+
+select:focus {
+  outline: none;
+}
+
+input {
+  padding: 13px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="text"],
+select {
+  width: 47%;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+input[type="date"] {
+  width: 97%;
+}
+
+input[type="time"] {
+  width: 97%;
+}
+
+input[type="submit"] {
+  width: 97%;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* experience css */
+.experience {
+  padding-top: 90px;
+  padding-bottom: 56px;
+}
+
+.experience-content h2 {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 20px 0px;
+}
+
+.experience-content h2 span {
+  color: #f3688a;
+}
+
+.experience-content p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.5%;
+}
+
+.experience-image {
+  width: 100%;
+  max-width: 495px;
+}
+
+.experience-services {
+  background: #ffe4db;
+  padding: 20px 15px 10px 20px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.experience-service {
+  width: 100%;
+  max-width: 464px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-servic-content {
+  width: 70%;
+}
+
+.experience-servic-content h2 {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.experience-servic-content p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.experience-servic-booking p {
+  color: #f3688a;
+  text-align: right;
+  font-family: "Brand";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 33px;
+}
+
+.experience-servic-booking a {
+  display: inline-flex;
+  padding: 7.84px 12.68px 9.16px 13.32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 8.96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s ease-in-out;
+}
+
+.experience-servic-booking a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.experience-btn .fa {
+  color: #f3688a;
+  transform: rotate(90deg);
+}
+
+.experience-note {
+  color: #707070;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  margin-top: 19px;
+}
+
+#scroll-div {
+  overflow: hidden;
+  height: 417px;
+}
+
+.experience-btn button {
+  display: flex;
+  width: 472px;
+  height: 40px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f3688a;
+  background: transparent;
+  margin-top: 46px;
+}
+
+.item:last-child {
+  margin-bottom: 0px;
+}
+
+/* Our Gallery css */
+.gallery {
+  padding-top: 64px;
+  padding-bottom: 131px;
+}
+
+.button-group button {
+  border: 1px solid #f3688a;
+  background: transparent;
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  color: #f3688a;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-right: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.button-group button:hover {
+  background: #f3688a;
+  color: #fff;
+}
+
+.button-group button:last-child {
+  margin-right: unset;
+}
+
+.gallery-isotops {
+  padding-top: 49px;
+}
+
+.gallery-isotops {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.massage {
+  width: 39%;
+}
+
+.massage-image {
+  width: 100%;
+  max-width: 598px;
+  background-image: linear-gradient(to bottom,
+      rgb(72 72 74 / 21%),
+      rgb(22 21 22 / 53%)),
+    url(../img/Rectangle\ 15.png);
+  height: 748px;
+  text-align: center;
+  padding: 339px 0px 287px 0px;
+}
+
+.massage-image h2 {
+  color: #fff;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-bottom: 25px;
+}
+
+.massage-image a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.4s ease-in-out;
+}
+
+.massage-image a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.massage-right {
+  width: 59%;
+}
+
+.massage-face {
+  width: 100%;
+  max-width: 857px;
+  margin-bottom: 25px;
+}
+
+.massage-hair-nail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.massage-hair {
+  width: 100%;
+  max-width: 474px;
+}
+
+.massage-nail {
+  width: 100%;
+  max-width: 346px;
+}
+
+/* MAP CSS */
+.map {
+  padding: 50px 0px 100px;
+}
+
+.map-outer {
+  padding-left: 220px;
+}
+
+.location-map {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1903px;
+}
+
+/* FOOTER CSS */
+
+.footer-image {
+  width: 100%;
+  max-width: 101px;
+  margin-bottom: 14px;
+}
+
+.footer-description {
+  width: 100%;
+  max-width: 365px;
+  margin-bottom: 25px;
+}
+
+.footer-description p {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 142.5%;
+}
+
+.footer-socail ul {
+  width: 100%;
+  max-width: 118px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socail .fa {
+  font-size: 25px;
+  color: #4f4f4f;
+}
+
+.footer-link {
+  width: 100%;
+  max-width: 341px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links h2 {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+
+.footer-links li {
+  margin-bottom: 16px;
+}
+
+.footer-links li a {
+  color: #101010;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.footer-subscribes {
+  width: 100%;
+  max-width: 266px;
+  margin-left: auto;
+}
+
+input[type="email"] {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  background: #ffe4db;
+}
+
+.footer-subscribes a {
+  display: flex;
+  width: 128px;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-subscribes a:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.copy-write {
+  background: #f3688a;
+  padding: 8px 0px;
+  margin-top: 60px;
+}
+
+.copy-write p {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* isotops css */
+.grid {
+  width: 100%;
+}
+
+.element-item {
+  width: 50%;
+}
+
+.isotops-massage {
+  width: 100%;
+  max-width: 598px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.isotops-massage:hover .massage-isotops {
+  top: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.massage-isotopp {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 246px 0px 249px 0px;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.isotops-massage-image {
+  width: 100%;
+  max-width: 598px;
+  background-image: linear-gradient(to bottom,
+      rgb(72 72 74 / 21%),
+      rgb(22 21 22 / 53%)),
+    url(../img/Rectangle\ 15.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  text-align: center;
+  padding: 317px 0;
+}
+
+.isotops-massage-image h2 {
+  color: #fff;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-bottom: 25px;
+}
+
+.isotops-massage-image a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.4s ease-in-out;
+}
+
+.isotops-massage-image a:hover {
+  background: #101010;
+}
+
+.isotops-massage-right {
+  width: 100%;
+  max-width: 800px;
+}
+
+.isotops-massage-face {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.massage-facee {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 103px 0px;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.isotops-massage-face:hover .massage-face {
+  left: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.isotops-massage-face img:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.isotops-massage-face h2 {
+  color: #fff;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-bottom: 25px;
+}
+
+.isotops-massage-face a {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.4s ease-in-out;
+}
+
+.isotops-massage-face a:hover {
+  background: black;
+}
+
+.isotops-massage-hair-nail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.isotops-massage-hair {
+  width: 100%;
+  max-width: 406px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.isotops-massage-hair:hover .massage-hair {
+  left: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.massage-hairr {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 72px 0;
+}
+
+.isotops-massage-hair img:hover {
+  opacity: 0.9;
+}
+
+.massage-head {
+  color: #fff;
+  font-family: "Brand";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  margin-bottom: 25px;
+}
+
+.book-anker-link {
+  display: inline-flex;
+  padding: 15px 23px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f3688a;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.4s ease-in-out;
+}
+
+.book-anker-link:hover {
+  background: #101010;
+  color: #fff;
+}
+
+.isotops-massage-nail {
+  width: 100%;
+  max-width: 294px;
+  position: relative;
+  overflow: hidden;
+}
+
+.isotops-massage-nail:hover .massage-nail {
+  top: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.massage-naill {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 72px 0;
+}
+
+
+.element-item {
+  display: flex;
+}
+
+/* isotops css end here*/
+
+/* bootstrap carousal css end here*/
+
+/* before and after */
+div.container {
+  width: 100%;
+  max-width: 495px;
+  height: 542px;
+  position: relative;
+}
+
+.before {
+  background-image: url(../img/before.png);
+}
+
+.after {
+  background-image: url(../img/after.png);
+}
+
+div.image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+div.before {
+  width: 50%;
+  z-index: 2;
+}
+
+div.after {
+  width: 100%;
+  z-index: 1;
+}
+
+input.slider {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  margin: 0px;
+  z-index: 3;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  transition: 0.25s all ease-in-out;
+  -moz-transition: 0.25s all ease-in-out;
+  -webkit-transition: 0.25s all ease-in-out;
+  z-index: 4;
+}
+
+input.slider::-moz-range-thumb {
+  width: 6px;
+  height: 600px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input.slider::-webkit-slider-thumb {
+  width: 6px;
+  height: 530px;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+div.slider-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -moz-broder-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #f3688a;
+  position: absolute;
+  top: calc(50% - 18px);
+  left: calc(50% - 18px);
+  cursor: pointer;
+  z-index: 3;
+}
+
+div.slider-button:before {
+  color: #fff;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  content: url('../img/left.png');
+}
+
+div.slider-button:after {
+  color: #fff;
+  position: absolute;
+  top: 11px;
+  right: 8px;
+  content: url('../img/right.png');
+}
+
+/* all media  */
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (max-width: 1800px) {
+  header {
+    padding: 4px 190px 3px;
+  }
+
+  .main-padding {
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+
+  .button-group button {
+    margin-right: 12px;
+  }
+
+  .massage-image {
+    height: 737px;
+  }
+
+  .map-outer {
+    padding-left: 200px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 291px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 401px;
+  }
+
+  .isotops-massage-image {
+    padding: 310px 0px 310px 0px;
+  }
+
+  .experience-btn button {
+    width: 451px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+  .main-padding {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  header {
+    padding: 4px 150px 3px;
+  }
+
+  .banner-counter {
+    margin-bottom: 112px;
+  }
+
+  .experience-btn button {
+    width: 436px;
+    margin-top: 30px;
+  }
+
+  .massage-hair {
+    max-width: 459px;
+  }
+
+  .massage-nail {
+    max-width: 333px;
+  }
+
+  .massage-image {
+    height: 712px;
+    padding: 296px 0px 287px 0px;
+  }
+
+  .map-outer {
+    padding-left: 157px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 391px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 283px;
+  }
+
+  .massage-facee {
+    padding: 91px 0px;
+  }
+
+  .isotops-massage-image {
+    padding: 302px 0px 302px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+  .main-padding {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+
+  header {
+    padding: 4px 128px 3px;
+  }
+
+  .experience-btn button {
+    width: 425px;
+    margin-top: 27px;
+  }
+
+  .about-right h2 {
+    line-height: 108%;
+  }
+
+  .experience-content h2 {
+    margin: 6px 0px;
+  }
+
+  .button-group button {
+    margin-right: 4px;
+  }
+
+  .massage-hair {
+    max-width: 448px;
+  }
+
+  .massage-nail {
+    max-width: 326px;
+  }
+
+  .map-outer {
+    padding-left: 136px;
+  }
+
+  .massage-image {
+    height: auto;
+    padding: 254px 0px 306px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+  .main-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  header {
+    padding: 4px 100px 3px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 265px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 366px;
+  }
+
+  .isotops-massage-image {
+    padding: 284px 0px 285px 0px;
+  }
+
+  .banner-head h1 {
+    font-size: 60px;
+    line-height: 117%;
+    margin-bottom: 19px;
+  }
+
+  .about h2 {
+    font-size: 48px;
+    line-height: 111%;
+    margin-bottom: 34px;
+  }
+
+  .about-right h2 {
+    color: #101010;
+    font-family: "Quinstory";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .about-right p span {
+    margin-top: 11px;
+    margin-bottom: 17px;
+  }
+
+  .booking-request h2 {
+    font-size: 48px;
+    line-height: 111%;
+  }
+
+  .booking-form h2 {
+    font-size: 48px;
+    line-height: 128%;
+    margin-bottom: 7px;
+  }
+
+  .experience-content h2 {
+    font-size: 24px;
+    line-height: 117%;
+    margin: 5px 0px;
+  }
+
+  .experience-content p {
+    font-size: 22px;
+    line-height: 141.5%;
+  }
+
+  .experience-servic-content h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .experience-services {
+    padding: 18px 14px 9px 19px;
+    margin-bottom: 22px;
+  }
+
+  .map-outer {
+    padding-left: 111px;
+  }
+
+  .experience-btn button {
+    width: 411px;
+    margin-top: 9px;
+  }
+
+  .button-group button {
+    padding: 10px 19px;
+    font-size: 19px;
+  }
+
+  .massage-nail {
+    max-width: 313px;
+  }
+
+  .massage-hair {
+    max-width: 433px;
+  }
+
+  .massage-image {
+    padding: 231px 0px 306px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  .main-padding {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  div.container {
+    max-width: 473px;
+    height: 461px;
+  }
+
+  header {
+    padding: 4px 74px 3px;
+  }
+
+  .map-outer {
+    padding-left: 89px;
+  }
+
+  header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .banner-head {
+    max-width: 548px;
+  }
+
+  .banner-head h1 {
+    font-size: 51px;
+  }
+
+  .about-line p {
+    font-size: 17px;
+    line-height: 111.7%;
+  }
+
+  .about h2 {
+    font-size: 42px;
+    line-height: 102%;
+    margin-bottom: 22px;
+  }
+
+  .about-right h2 {
+    font-size: 39px;
+    line-height: 92%;
+  }
+
+  .about-right p {
+    font-size: 23px;
+    line-height: 128%;
+  }
+
+  .booking-request h2 {
+    font-size: 42px;
+    line-height: 104%;
+  }
+
+  .about-line {
+    max-width: 172px;
+    margin-bottom: 18px;
+  }
+
+  .booking-form h2 {
+    font-size: 46px;
+    line-height: 126%;
+    margin-bottom: 8px;
+  }
+
+  .experience-servic-content h2 {
+    font-size: 21px;
+    margin-bottom: 7px;
+  }
+
+  .experience-servic-content p {
+    font-size: 15px;
+  }
+
+  .experience-servic-booking p {
+    margin-bottom: 20px;
+  }
+
+  .experience-btn a {
+    width: 408px;
+  }
+
+  .about-line-image {
+    max-width: 37px;
+  }
+
+  .massage-hair {
+    max-width: 430px;
+  }
+
+  .massage-nail {
+    max-width: 312px;
+  }
+
+  .massage-image {
+    padding: 257px 0px 282px 0px;
+  }
+
+  .location-map {
+    margin-top: 25px;
+    max-width: 1439px;
+  }
+
+  .about {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  .booking {
+    height: calc(80vh);
+    padding-top: 58px;
+    padding-bottom: 17px;
+  }
+
+  .experience {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  .gallery {
+    padding-top: 61px;
+    padding-bottom: 53px;
+  }
+
+  .map {
+    padding: 30px 0px 77px;
+  }
+
+  .footer-description p {
+    font-size: 15px;
+    line-height: 139.5%;
+  }
+
+  .footer-image {
+    max-width: 98px;
+    margin-bottom: 11px;
+  }
+
+  .footer-description {
+    max-width: 346px;
+    margin-bottom: 19px;
+  }
+
+  .footer-links h2 {
+    font-size: 19px;
+    margin-bottom: 17px;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-subscribes a {
+    margin-top: 11px;
+  }
+
+  .copy-write {
+    margin-top: 45px;
+  }
+
+  #scroll-div {
+    height: 370px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  .main-padding {
+    padding-left: 60px;
+    padding-right: 59px;
+  }
+
+  header {
+    padding: 4px 60px 3px;
+  }
+
+  ul#menu {
+    max-width: 376px;
+  }
+
+  .header-logo {
+    max-width: 222px;
+  }
+
+  .massage-head {
+    font-size: 41px;
+    margin-bottom: 15px;
+  }
+
+  .book-anker-link {
+    padding: 13px 20px;
+    font-size: 15px;
+  }
+
+  .header-btn select {
+    max-width: 92px;
+  }
+
+  .header-btn a {
+    padding: 11px 20px;
+    font-size: 14px;
+  }
+
+  .header-btn {
+    max-width: 246px;
+  }
+
+  .massage-facee {
+    padding: 75px 0px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 351px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 254px;
+  }
+
+  .isotops-massage-image {
+    padding: 274px 0px 273px 0px;
+  }
+
+  .banner-right-conent {
+    max-width: 269px;
+  }
+
+  .banner-right-conent p {
+    font-size: 23px;
+    line-height: 117%;
+  }
+
+  .banner-head h1 {
+    font-size: 43px;
+  }
+
+  .banner-head {
+    max-width: 449px;
+  }
+
+  .banner-btn a {
+    padding: 13px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  .banner-counter-inner h6 {
+    font-size: 27px;
+    line-height: 101%;
+  }
+
+  .banner-counter-inner p {
+    font-size: 16px;
+    line-height: 117%;
+  }
+
+  .banner-counter {
+    margin-bottom: 100px;
+  }
+
+  .banner {
+    height: calc(89vh);
+  }
+
+  .about-line {
+    max-width: 175px;
+    margin-bottom: 17px;
+  }
+
+  .about h2 {
+    font-size: 36px;
+    line-height: 98%;
+    margin-bottom: 19px;
+  }
+
+  .about-right h2 {
+    font-size: 37px;
+    line-height: 93%;
+  }
+
+  .about-right p {
+    font-size: 21px;
+    line-height: 127%;
+  }
+
+  .about-right a {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+
+  .booking-request h2 {
+    font-size: 37px;
+    line-height: 103%;
+  }
+
+  .booking-form h2 {
+    font-size: 41px;
+    line-height: 125%;
+    margin-bottom: 8px;
+  }
+
+  .about {
+    padding-top: 51px;
+    padding-bottom: 65px;
+  }
+
+  .booking {
+    height: calc(75vh);
+    padding-top: 42px;
+    padding-bottom: 4px;
+  }
+
+  .experience-content h2 {
+    font-size: 23px;
+    line-height: 116%;
+    margin: 5px 0px;
+  }
+
+  .experience-content p {
+    font-size: 21px;
+    line-height: 140.5%;
+  }
+
+  .experience-btn button {
+    width: 394px;
+    margin-top: 9px;
+  }
+
+  .experience-image {
+    max-width: 387px;
+  }
+
+  .button-group button {
+    padding: 9px 17px;
+    font-size: 18px;
+  }
+
+  .gallery-isotops {
+    padding-top: 32px;
+  }
+
+  .massage-hair {
+    max-width: 415px;
+  }
+
+  .massage-nail {
+    max-width: 300px;
+  }
+
+  .massage-image {
+    padding: 254px 0px 258px 0px;
+  }
+
+  .map {
+    padding: 26px 0px 53px;
+  }
+
+  .map-outer {
+    padding-left: 75px;
+  }
+
+  .location-map {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  .header-logo {
+    max-width: 201px;
+  }
+
+  .header-btn {
+    max-width: 238px;
+  }
+
+  div.container {
+    max-width: 465px;
+    height: 431px;
+  }
+
+  .main-padding {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  header {
+    padding: 4px 55px 3px;
+  }
+
+  .banner-head h1 {
+    font-size: 40px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 238px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 330px;
+  }
+
+  .isotops-massage-image {
+    padding: 257px 0px 256px 0px;
+  }
+
+  .banner-head {
+    max-width: 429px;
+  }
+
+  .banner-head p {
+    margin-bottom: 45px;
+  }
+
+  .banner-btn {
+    max-width: 354px;
+    margin-bottom: 120px;
+  }
+
+  .banner {
+    height: calc(85vh);
+  }
+
+  .banner-right-conent p {
+    font-size: 21px;
+    line-height: 117%;
+  }
+
+  .banner-right-conent {
+    max-width: 242px;
+  }
+
+  .about-line p {
+    font-size: 16px;
+    line-height: 109.7%;
+  }
+
+  .about-line {
+    margin-bottom: 16px;
+  }
+
+  .about h2 {
+    font-size: 33px;
+    line-height: 96%;
+    margin-bottom: 18px;
+  }
+
+  .about-right h2 {
+    font-size: 35px;
+    line-height: 92%;
+  }
+
+  .about-right p {
+    font-size: 19px;
+    line-height: 125%;
+  }
+
+  .about {
+    padding-top: 41px;
+    padding-bottom: 55px;
+  }
+
+  .booking-request h2 {
+    font-size: 33px;
+    line-height: 100%;
+  }
+
+  .booking-form h2 {
+    font-size: 36px;
+    line-height: 124%;
+    margin-bottom: 8px;
+  }
+
+  .booking-form-data {
+    margin-top: 28px;
+  }
+
+  .booking {
+    height: calc(71vh);
+    padding-top: 40px;
+    padding-bottom: 1px;
+  }
+
+  .experience-content h2 {
+    font-size: 22px;
+    line-height: 116%;
+    margin: 5px 0px;
+  }
+
+  .experience-content p {
+    font-size: 19px;
+    line-height: 139.5%;
+  }
+
+  .experience-btn button {
+    width: 367px;
+    margin-top: 8px;
+  }
+
+  .experience-services {
+    padding: 17px 13px 8px 18px;
+    margin-bottom: 14px;
+  }
+
+  .gallery {
+    padding-top: 46px;
+    padding-bottom: 35px;
+  }
+
+  .massage-hair {
+    max-width: 388px;
+  }
+
+  .massage-nail {
+    max-width: 282px;
+  }
+
+  .massage-image {
+    padding: 237px 0px 237px 0px;
+  }
+
+  .massage-image h2 {
+    font-size: 46px;
+    line-height: 116%;
+    margin-bottom: 23px;
+  }
+
+  .massage-face {
+    max-width: 674px;
+    margin-bottom: 16px;
+  }
+
+  .map-outer {
+    padding-left: 71px;
+  }
+
+  .location-map {
+    margin-top: 17px;
+  }
+
+  .location-map iframe {
+    height: 418px;
+  }
+
+  .footer-image {
+    max-width: 94px;
+    margin-bottom: 9px;
+  }
+
+  .footer-description {
+    max-width: 304px;
+    margin-bottom: 18px;
+  }
+
+  .footer-links h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .footer-links li a {
+    font-size: 15px;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+
+  .footer-subscribes a {
+    margin-top: -1px;
+  }
+
+  #scroll-div {
+    height: 352px;
+  }
+
+  .massage-isotopp {
+    padding: 189px 0px 190px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .main-padding {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  header {
+    padding: 4px 45px 3px;
+  }
+
+  .banner-btn {
+    max-width: 354px;
+    margin-bottom: 91px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 225px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 311px;
+  }
+
+  .isotops-massage-image {
+    padding: 245px 0px 244px 0px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 39px;
+    margin-bottom: 17px;
+  }
+
+  .banner-counter {
+    margin-bottom: 73px;
+  }
+
+  .banner {
+    height: calc(77vh);
+  }
+
+  .banner-head p {
+    margin-bottom: 38px;
+  }
+
+  .banner-counter-inner p {
+    font-size: 15px;
+    line-height: 116%;
+  }
+
+  .banner-right-conent p {
+    font-size: 20px;
+    line-height: 117%;
+  }
+
+  .banner-right-conent {
+    max-width: 227px;
+  }
+
+  .about-line p {
+    font-size: 15px;
+    line-height: 108.7%;
+  }
+
+  .about-line-image {
+    max-width: 47px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+    line-height: 93%;
+    margin-bottom: 17px;
+  }
+
+  .about-right h2 {
+    font-size: 34px;
+    line-height: 92%;
+  }
+
+  .about-right {
+    padding-left: 25px;
+    padding-top: 146px;
+  }
+
+  .booking-request h2 {
+    font-size: 30px;
+    line-height: 97%;
+  }
+
+  .booking-form h2 {
+    font-size: 35px;
+    line-height: 119%;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 8px;
+  }
+
+  input {
+    margin-bottom: 17px;
+  }
+
+  .booking {
+    height: calc(67vh);
+    padding-top: 39px;
+    padding-bottom: 1px;
+  }
+
+  #scroll-div {
+    height: 342px;
+  }
+
+  .experience-servic-content h2 {
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+
+  .experience-servic-content p {
+    font-size: 14px;
+  }
+
+  .experience-services {
+    padding: 15px 12px 8px 17px;
+    margin-bottom: 14px;
+  }
+
+  .button-group button {
+    padding: 8px 13px;
+    font-size: 17px;
+  }
+
+  .massage-hair {
+    max-width: 368px;
+  }
+
+  .massage-nail {
+    max-width: 266px;
+  }
+
+  .massage-image h2 {
+    font-size: 36px;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  .massage-image a {
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+
+  .massage-image {
+    padding: 234px 0px 234px 0px;
+  }
+
+  .experience {
+    padding-top: 57px;
+    padding-bottom: 40px;
+  }
+
+  .map-outer {
+    padding-left: 64px;
+  }
+
+  .about-line {
+    margin-bottom: 16px;
+  }
+
+  .map {
+    padding: 17px 0px 53px;
+  }
+
+  #scroll-div {
+    height: 342px;
+  }
+
+  .experience-btn button {
+    width: 348px;
+    margin-top: 8px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1153px and up) */
+@media only screen and (max-width: 1153px) {
+  .header-logo {
+    max-width: 176px;
+  }
+
+  ul#menu {
+    max-width: 346px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 217px;
+  }
+
+  div.container {
+    max-width: 465px;
+    height: 407px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 301px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 35px;
+    margin-bottom: 7px;
+  }
+
+  .main-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .isotops-massage-image {
+    padding: 235px 0px 236px 0px;
+  }
+
+  .massage-head {
+    font-size: 35px;
+    margin-bottom: 13px;
+  }
+
+  .isotops-massage-face h2 {
+    font-size: 35px;
+    margin-bottom: 7px;
+  }
+
+  header {
+    padding: 4px 40px 3px;
+  }
+
+  .banner {
+    height: calc(75vh);
+    padding-top: 62px;
+  }
+
+  .banner-right-conent {
+    max-width: 220px;
+  }
+
+  .banner-right-conent p {
+    font-size: 19px;
+    line-height: 117%;
+  }
+
+  .banner-btn a {
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  .banner-btn {
+    max-width: 354px;
+    margin-bottom: 83px;
+  }
+
+  .about-right {
+    padding-left: 23px;
+    padding-top: 129px;
+  }
+
+  .booking-request h2 {
+    font-size: 29px;
+    line-height: 97%;
+  }
+
+  .booking-form h2 {
+    font-size: 33px;
+    line-height: 117%;
+    margin-bottom: 8px;
+  }
+
+  .booking {
+    height: calc(66vh);
+    padding-top: 39px;
+    padding-bottom: 15px;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 7px;
+  }
+
+  input {
+    margin-bottom: 16px;
+  }
+
+  .experience-content h2 {
+    font-size: 21px;
+    line-height: 114%;
+    margin: 9px 0px;
+  }
+
+  .experience-content p {
+    font-size: 18px;
+    line-height: 138.5%;
+  }
+
+  .experience-btn button {
+    width: 334px;
+    margin-top: 4px;
+  }
+
+  .experience-services {
+    padding: 15px 12px 8px 17px;
+    margin-bottom: 12px;
+  }
+
+  .gallery-isotops {
+    padding-top: 23px;
+  }
+
+  .massage-face {
+    max-width: 619px;
+    margin-bottom: 13px;
+  }
+
+  .massage-nail {
+    max-width: 257px;
+  }
+
+  .massage-hair {
+    max-width: 354px;
+  }
+
+  .massage-image h2 {
+    font-size: 34px;
+    line-height: 106%;
+    margin-bottom: 20px;
+  }
+
+  .massage-image {
+    padding: 224px 0px 224px 0px;
+  }
+
+  .map-outer {
+    padding-left: 55px;
+  }
+
+  .location-map iframe {
+    height: 383px;
+  }
+
+  .footer-description {
+    max-width: 295px;
+    margin-bottom: 18px;
+  }
+
+  .footer-link {
+    max-width: 291px;
+  }
+
+  .footer-links li {
+    margin-bottom: 4px;
+  }
+
+  .copy-write {
+    margin-top: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1114px and up) */
+@media only screen and (max-width: 1114px) {
+  .main-padding {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  header {
+    padding: 4px 34px 3px;
+  }
+
+  .isotops-massage-image {
+    padding: 231px 0px 231px 0px;
+  }
+
+  .about-right {
+    padding-left: 22px;
+    padding-top: 113px;
+  }
+
+  .booking {
+    height: calc(64vh);
+    padding-top: 39px;
+    padding-bottom: 15px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 213px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 294px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  .isotops-massage-image a {
+    padding: 12px 19px;
+    font-size: 15px;
+  }
+
+  .experience-btn button {
+    width: 327px;
+    margin-top: 4px;
+  }
+
+  .button-group button {
+    padding: 7px 12px;
+    font-size: 16px;
+  }
+
+  .massage-nail {
+    max-width: 250px;
+  }
+
+  .massage-hair {
+    max-width: 343px;
+  }
+
+  .massage-image {
+    padding: 216px 0px 216px 0px;
+  }
+
+  .map-outer {
+    padding-left: 47px;
+  }
+
+  .map {
+    padding: 4px 0px 51px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .main-padding {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  header {
+    padding: 0px 27px 0px;
+  }
+
+  div.container {
+    max-width: 465px;
+    height: 393px;
+  }
+
+  .ab header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .banner-head h1 {
+    font-size: 36px;
+  }
+
+  .banner-head {
+    max-width: 387px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 271px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 196px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .isotops-massage-image a {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .isotops-massage-image {
+    padding: 213px 0px 214px 0px;
+  }
+
+  .isotops-massage-face h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .isotops-massage-face a {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .massage-head {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .book-anker-link {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .banner-head p {
+    margin-bottom: 34px;
+    font-size: 15px;
+    line-height: 112.7%;
+    max-width: 343px;
+  }
+
+  .banner {
+    height: calc(71vh);
+    padding-top: 62px;
+  }
+
+  .banner-counter-inner p {
+    font-size: 14px;
+    line-height: 115%;
+  }
+
+  .banner-counter-inner h6 {
+    font-size: 25px;
+    line-height: 100%;
+  }
+
+  .banner-counter {
+    margin-bottom: 69px;
+    max-width: 483px;
+  }
+
+  .banner-content {
+    max-width: 374px;
+    padding-top: 21px;
+  }
+
+  .banner-right-conent p {
+    font-size: 18px;
+    line-height: 117%;
+  }
+
+  .banner-right-conent {
+    max-width: 216px;
+  }
+
+  .about-right h2 {
+    font-size: 31px;
+    line-height: 92%;
+  }
+
+  .about-right p {
+    font-size: 18px;
+    line-height: 125%;
+  }
+
+  .about-right p span {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .booking-form-data {
+    margin-top: 24px;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 6px;
+  }
+
+  input {
+    margin-bottom: 14px;
+  }
+
+  .booking {
+    height: calc(61vh);
+    padding-top: 25px;
+    padding-bottom: 14px;
+  }
+
+  .experience-btn button {
+    width: 301px;
+    margin-top: 8px;
+  }
+
+  .experience-content p {
+    font-size: 17px;
+    line-height: 132.5%;
+  }
+
+  .button-group button {
+    padding: 7px 10px;
+    font-size: 15px;
+  }
+
+  .massage-face {
+    max-width: 558px;
+    margin-bottom: 12px;
+  }
+
+  .massage-hair {
+    max-width: 320px;
+  }
+
+  .massage-nail {
+    max-width: 232px;
+  }
+
+  .massage-image {
+    padding: 197px 0px 197px 0px;
+  }
+
+  .map-outer {
+    padding-left: 43px;
+  }
+
+  .about-line-image {
+    max-width: 52px;
+    margin-right: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (max-width: 991px) {
+  header .navbar-nav li .active {
+    padding: 7px 10px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 265px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 193px;
+  }
+
+  div.container {
+    max-width: 461px;
+    height: 356px;
+  }
+
+  .isotops-massage-image {
+    padding: 209px 0px 209px 0px;
+  }
+
+  .navbar-toggler {
+    background-color: #f3688a;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler-icon {
+    height: 3px;
+    width: 38px;
+    background-image: unset;
+    background-color: rgba(241, 233, 233, 0.733);
+    margin: 5px 0px;
+    border-radius: 5px;
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .banner-head h1 {
+    font-size: 34px;
+  }
+
+  .banner-head {
+    max-width: 366px;
+  }
+
+  .banner-btn img {
+    max-width: 45px;
+  }
+
+  .banner-btn a {
+    padding: 10px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .banner-counter {
+    margin-bottom: 65px;
+    max-width: 479px;
+  }
+
+  .banner-counter-inner {
+    padding: 0px 23px;
+  }
+
+  .banner-right-conent p {
+    font-size: 17px;
+    line-height: 116%;
+  }
+
+  .banner-right-conent {
+    max-width: 193px;
+  }
+
+  .main-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header {
+    padding: 0px 0px 0px;
+    z-index: 5;
+  }
+
+  .ab .banner-btn {
+    max-width: 307px;
+    margin-bottom: 83px;
+  }
+
+  .banner-counter-inner h6 {
+    font-size: 23px;
+    line-height: 100%;
+  }
+
+  .banner-content .fa {
+    font-size: 19px;
+    margin-right: 14px;
+  }
+
+  .banner-content {
+    max-width: 368px;
+    padding-top: 17px;
+  }
+
+  .about {
+    padding-top: 34px;
+    padding-bottom: 49px;
+    text-align: center;
+  }
+
+  .about-line {
+    max-width: 172px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 641px;
+    margin: 0 auto;
+  }
+
+  .about-right {
+    padding-left: 22px;
+    padding-top: 43px;
+  }
+
+  .booking {
+    background-image: linear-gradient(to bottom,
+        rgb(174 138 213 / 2%),
+        rgb(237 223 237 / 69%)),
+      url(../img/booking.png);
+    height: calc(61vh);
+    padding-top: 25px;
+    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  .booking-form-data {
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 6px;
+    width: 48%;
+  }
+
+  .booking-form p {
+    margin-bottom: 14px;
+  }
+
+  .map-outer {
+    padding-left: 0px;
+  }
+
+  .experience-services {
+    padding: 21px 16px 10px 26px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 526px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+  }
+
+  .experience-service {
+    max-width: 100%;
+  }
+
+  .experience-btn {
+    text-align: center;
+  }
+
+  .experience-btn button {
+    width: 525px;
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+
+  .experience-image {
+    max-width: 387px;
+    margin-bottom: 37px;
+  }
+
+  .massage-face {
+    max-width: 544px;
+    margin-bottom: 12px;
+  }
+
+  .massage-nail {
+    max-width: 227px;
+  }
+
+  .massage-hair {
+    max-width: 312px;
+  }
+
+  .massage-image h2 {
+    font-size: 31px;
+    line-height: 104%;
+    margin-bottom: 16px;
+  }
+
+  .massage-image {
+    padding: 195px 0px 194px 0px;
+  }
+
+  .booking-request h2 {
+    font-size: 29px;
+    line-height: 97%;
+    text-align: center;
+  }
+
+  .location-map iframe {
+    height: 329px;
+  }
+
+  .footer-links h2 {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  .footer-description {
+    max-width: 287px;
+    margin-bottom: 18px;
+  }
+
+  .footer-subscribes a {
+    width: 113px;
+    padding: 12px 12px;
+    font-size: 15px;
+  }
+
+  .header-container {
+    padding-left: unset !important;
+    padding-right: unset !important;
+  }
+
+  .header-mobile-logo {
+    display: block !important;
+    margin-left: 4px;
+  }
+
+  .disktop-logo {
+    display: none;
+  }
+
+  .toggle-menu {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 79%;
+    text-align: center;
+  }
+
+  ul#menu {
+    max-width: 100%;
+    text-align: center;
+    padding: 72px 0px 10px;
+  }
+
+  .header-btn {
+    max-width: 238px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    justify-content: center;
+  }
+
+  #scroll-div {
+    height: 352px;
+  }
+
+  .massage-isotopp {
+    padding: 159px 0px 178px 0px;
+  }
+
+  .massage-naill {
+    padding: 51px 0;
+  }
+
+  .massage-hairr {
+    padding: 52px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+  .banner-head h1 {
+    font-size: 33px;
+  }
+
+  .banner {
+    height: calc(66vh);
+    padding-top: 50px;
+  }
+
+  .banner-counter-inner h6 {
+    font-size: 21px;
+    line-height: 100%;
+  }
+
+  .banner-counter-inner {
+    padding: 0px 12px;
+  }
+
+  .banner-right-conent {
+    max-width: 181px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 235px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 170px;
+  }
+
+  .isotops-massage-image {
+    padding: 186px 0px 187px 0px;
+  }
+
+  .banner-right-conent p {
+    font-size: 16px;
+    line-height: 116%;
+  }
+
+  .button-group button {
+    padding: 7px 9px;
+    font-size: 14px;
+    margin-right: 1px;
+  }
+
+  .massage-hair {
+    max-width: 276px;
+  }
+
+  .massage-nail {
+    max-width: 200px;
+  }
+
+  .massage-image {
+    padding: 170px 0px 170px 0px;
+  }
+
+  .footer-description p {
+    font-size: 14px;
+    line-height: 138.5%;
+  }
+
+  .footer-links h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-links li a {
+    font-size: 14px;
+  }
+
+  .footer-links li {
+    margin-bottom: 3px;
+  }
+
+  .button-group {
+    text-align: center;
+  }
+
+  .button-group button {
+    padding: 8px 11px;
+    font-size: 14px;
+    margin-right: 1px;
+    margin-bottom: 6px;
+  }
+
+  .massage-hair {
+    max-width: 260px;
+  }
+
+  .massage-nail {
+    max-width: 188px;
+  }
+
+  .massage-image {
+    padding: 157px 0px 157px 0px;
+  }
+
+  .location-map iframe {
+    height: 269px;
+  }
+
+  .massage-isotops {
+    top: -96%;
+  }
+
+  .massage-nail {
+    top: -115%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .about {
+    padding-top: 27px;
+    padding-bottom: 39px;
+  }
+
+  .massage-nail {
+    max-width: 172px;
+  }
+
+  .massage-hair {
+    max-width: 238px;
+  }
+
+  .massage-image {
+    padding: 141px 0px 140px 0px;
+  }
+
+  .massage-image h2 {
+    font-size: 29px;
+    line-height: 102%;
+    margin-bottom: 16px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .isotops-massage-image a {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 144px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 200px;
+  }
+
+  .isotops-massage-image {
+    padding: 161px 0px 160px 0px;
+  }
+
+  .isotops-massage-face h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .isotops-massage-face a {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .massage-head {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .book-anker-link {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .massage-nail {
+    top: -136%;
+  }
+
+  .massage-isotops {
+    top: -114%;
+  }
+
+  .massage-isotopp {
+    padding: 112px 0px 140px 0px;
+  }
+
+  .massage-facee {
+    padding: 47px 0px;
+  }
+
+  .massage-naill {
+    padding: 32px 0;
+  }
+
+  .massage-hairr {
+    padding: 34px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: calc(77vh);
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .banner-head {
+    max-width: 452px;
+    margin: 0 auto;
+  }
+
+  .banner-head p {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+
+  div.container {
+    max-width: 457px;
+    height: 353px;
+    margin-top: 18px;
+  }
+
+  .banner-btn {
+    max-width: 321px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    margin-top: 12px;
+  }
+
+  .banner-counter {
+    margin-bottom: 65px;
+    max-width: 424px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  .banner-content {
+    max-width: 368px;
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+
+  .banner-right-conent {
+    max-width: 181px;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .banner-right-image {
+    max-width: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .experience {
+    padding-top: 31px;
+    padding-bottom: 11px;
+    text-align: center;
+  }
+
+  .experience-image {
+    max-width: 388px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  .button-group button {
+    padding: 8px 11px;
+    font-size: 14px;
+    margin-right: 1px;
+    margin-bottom: 2px;
+    margin-top: 18px;
+  }
+
+  .footer-socail {
+    margin-bottom: 19px;
+  }
+
+  .experience-service {
+    text-align: initial;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 640px and up) */
+@media only screen and (max-width: 640px) {
+  .massage-nail {
+    max-width: 140px;
+  }
+
+  .massage-hair {
+    max-width: 192px;
+  }
+
+  .massage-image h2 {
+    font-size: 27px;
+    line-height: 97%;
+    margin-bottom: 11px;
+  }
+
+  .massage-image {
+    padding: 112px 0px 112px 0px;
+  }
+
+  .copy-write {
+    margin-top: 9px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 164px;
+  }
+
+  .isotops-massage-nail {
+    max-width: 119px;
+  }
+
+  .isotops-massage-image h2 {
+    font-size: 25px;
+    margin-bottom: 4px;
+  }
+
+  .isotops-massage-image {
+    padding: 133px 0px 133px 0px;
+  }
+
+  .banner {
+    height: calc(70vh);
+  }
+
+  .about-line-image {
+    max-width: 51px;
+    margin-right: 10px;
+  }
+
+  .massage-isotops {
+    top: -146%;
+  }
+
+  .massage-nail {
+    top: -168%;
+  }
+
+  .experience-image {
+    max-width: 310px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 353px;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 576px and up) */
+@media only screen and (max-width: 576px) {
+  .massage-nail {
+    max-width: 124px;
+  }
+
+  .massage-hair {
+    max-width: 172px;
+  }
+
+  .massage-image {
+    padding: 96px 0px 96px 0px;
+  }
+
+  .about {
+    padding-top: 23px;
+    padding-bottom: 32px;
+  }
+
+  .booking-form {
+    padding-top: 13px;
+  }
+
+  .element-item {
+    display: block;
+    width: 100%;
+  }
+
+  .isotops-massage-image {
+    padding: 100px 0px 100px 0px;
+    margin-bottom: 12px;
+  }
+
+  .isotops-massage-hair {
+    max-width: 57%;
+  }
+
+  .isotops-massage-nail {
+    max-width: 41%;
+  }
+
+  .isotops-massage-face {
+    margin-bottom: 12px;
+  }
+
+  .booking {
+    height: calc(61vh);
+    padding-top: 22px;
+    padding-bottom: 17px;
+  }
+
+  .experience {
+    padding-top: 29px;
+    padding-bottom: 6px;
+  }
+
+  .experience-content p {
+    margin-bottom: 16px;
+  }
+
+  .experience-btn button {
+    width: 513px;
+  }
+
+  .massage-isotops {
+    top: -168%;
+  }
+
+  .gallery {
+    padding-top: 36px;
+    padding-bottom: 31px;
+  }
+
+  .map {
+    padding: 2px 0px 35px;
+  }
+
+  .footer-image {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .footer-socail ul {
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 2px;
+    width: 48%;
+  }
+
+  .isotops-massage-hair:hover .massage-hair {
+    left: 25%;
+  }
+
+  .isotops-massage-nail:hover .massage-nail {
+    left: 20%;
+  }
+
+  .massage-isotops {
+    top: -168%;
+    padding: 57px 0px 63px 0px !important;
+  }
+
+  .massage-nail {
+    padding: 91px 0px;
+    left: 0% !important;
+    max-width: 230px !important;
+  }
+
+  .isotops-massage-hair:hover .massage-hair {
+    left: 0%;
+    max-width: 291px;
+  }
+
+  .experience-image {
+    max-width: 276px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .massage-isotopp {
+    padding: 67px 0px 64px 0px;
+  }
+
+  .massage-facee {
+    padding: 84px 0px;
+  }
+
+  .massage-naill {
+    padding: 64px 0;
+  }
+
+  .massage-hairr {
+    padding: 65px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 575px and up) */
+@media only screen and (max-width: 575px) {
+  .booking-form-data {
+    max-width: 508px;
+  }
+
+  .footer-link {
+    max-width: 291px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  .footer-subscribes {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-subscribes a {
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .banner-btn {
+    max-width: 321px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+    margin-top: 13px;
+  }
+
+  .banner {
+    height: calc(64vh);
+  }
+
+  .about-right {
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+
+  .experience-btn button {
+    width: 476px;
+  }
+
+  .massage-nail {
+    max-width: 115px;
+  }
+
+  .massage-hair {
+    max-width: 159px;
+  }
+
+  .massage-image {
+    padding: 87px 0px 87px 0px;
+  }
+
+  .location-map iframe {
+    height: 210px;
+  }
+
+  .experience-image {
+    max-width: 260px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+  .banner-head h1 {
+    font-size: 28px;
+    margin-bottom: 17px;
+  }
+
+  .main-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-counter-inner {
+    padding: 0px 10px;
+  }
+
+  .banner-content {
+    padding-top: 15px;
+  }
+
+  .banner-right-conent {
+    margin-top: 20px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-right {
+    padding-top: 28px;
+  }
+
+  .about {
+    padding-top: 21px;
+    padding-bottom: 25px;
+  }
+
+  .experience-btn button {
+    width: 425px;
+  }
+
+  .gallery-isotops {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .massage-image {
+    padding: 65px 0px 65px 0px;
+  }
+
+  .massage {
+    width: 100%;
+  }
+
+  .massage-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .massage-nail {
+    max-width: 39%;
+  }
+
+  .massage-hair {
+    max-width: 54%;
+  }
+
+  .about-line-image {
+    max-width: 44px;
+    margin-right: 9px;
+  }
+
+  .experience-image {
+    max-width: 239px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 305px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 428px and up) */
+@media only screen and (max-width: 428px) {
+  .experience-btn button {
+    width: 374px;
+  }
+
+  .isotops-massage-hair:hover .massage-hair {
+    max-width: 372px;
+  }
+
+  .massage-nail {
+    padding: 141px 0px;
+    max-width: 375px !important;
+  }
+
+  .booking-form {
+    padding-top: 6px;
+  }
+
+  input[type="text"],
+  select {
+    margin-right: 0px;
+    width: 97%;
+  }
+
+  input {
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+
+  .booking-form h2 {
+    font-size: 22px;
+    line-height: 115%;
+    margin-bottom: 8px;
+  }
+
+  .booking {
+    height: calc(67vh);
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .footer-links h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .isotops-massage-hair-nail {
+    display: block;
+  }
+
+  .isotops-massage-hair {
+    max-width: 100%;
+  }
+
+  .isotops-massage-nail {
+    max-width: 100%;
+    margin-top: 12px;
+  }
+
+  .isotops-massage-nail:hover .massage-nail {
+    left: 32%;
+  }
+
+  .experience-image {
+    max-width: 206px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 267px;
+  }
+
+  .massage-facee {
+    padding: 52px 0px;
+  }
+
+  .massage-hairr {
+    padding: 93px 0;
+  }
+
+  .massage-naill {
+    padding: 141px 0;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 414px and up) */
+@media only screen and (max-width: 414px) {
+  .experience-btn button {
+    width: 356px;
+  }
+
+  .isotops-massage-hair-nail {
+    display: block;
+  }
+
+  .isotops-massage-hair {
+    max-width: 100%;
+  }
+
+  .isotops-massage-nail {
+    max-width: 100%;
+    margin-top: 12px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  .banner-head h1 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .booking-request h2 {
+    font-size: 26px;
+    line-height: 94%;
+  }
+
+  .booking-form h2 {
+    font-size: 20px;
+    line-height: 115%;
+    margin-bottom: 7px;
+  }
+
+  .experience-btn button {
+    width: 334px;
+    margin-top: 6px;
+  }
+
+  .experience-services {
+    padding: 18px 13px 9px 15px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 232px;
+  }
+
+  .experience-image {
+    max-width: 188px;
+  }
+
+  .massage-naill {
+    padding: 125px 0;
+  }
+
+  .massage-facee {
+    padding: 43px 0px;
+  }
+
+  .massage-hairr {
+    padding: 81px 0;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+@media only screen and (max-width: 375px) {
+  .banner-head h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-right h2 {
+    font-size: 22px;
+    line-height: 91%;
+  }
+
+  .about {
+    padding-top: 18px;
+    padding-bottom: 21px;
+  }
+
+  .booking-request h2 {
+    font-size: 24px;
+    line-height: 93%;
+  }
+
+  .booking {
+    padding-top: 14px;
+  }
+
+  .experience-btn button {
+    width: 318px;
+    margin-top: 5px;
+  }
+
+  #scroll-div {
+    height: 348px;
+  }
+
+  .isotops-massage-image {
+    margin-bottom: 8px;
+  }
+
+  .isotops-massage-face {
+    margin-bottom: 8px;
+  }
+
+  .isotops-massage-nail {
+    margin-top: 8px;
+  }
+
+  .button-group button {
+    margin-top: 11px;
+  }
+
+  .massage-hair-nail {
+    display: block;
+  }
+
+  .massage-hair {
+    max-width: 100%;
+  }
+
+  .massage-nail {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .about-line {
+    max-width: 141px;
+  }
+
+  .about-line p {
+    font-size: 14px;
+    line-height: 107.7%;
+  }
+
+  .about-line-image {
+    max-width: 33px;
+    margin-right: 10px;
+  }
+
+  .header-mobile-logo {
+    width: 100%;
+    max-width: 113px;
+  }
+
+  .experience-image {
+    max-width: 182px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 226px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+  .booking-form h2 {
+    font-size: 18px;
+    line-height: 115%;
+    margin-bottom: 7px;
+  }
+
+  .experience-btn button {
+    width: 310px;
+  }
+
+  .main-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .isotops-massage-hair:hover .massage-hair {
+    left: 5%;
+  }
+
+  .isotops-massage-nail:hover .massage-nail {
+    left: 5%;
+  }
+
+  .massage-facee {
+    padding: 36px 0px;
+  }
+
+  .massage-hairr {
+    padding: 73px 0;
+  }
+
+  .massage-naill {
+    padding: 111px 0;
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .main-padding {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .banner-head h1 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .banner-btn p {
+    font-size: 12px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+    line-height: 91%;
+    margin-bottom: 14px;
+  }
+
+  .about h2 {
+    font-size: 25px;
+    line-height: 90%;
+    margin-bottom: 13px;
+  }
+
+  .experience-btn button {
+    width: 289px;
+    margin-top: 11px;
+  }
+
+  .isotops-massage-hair:hover .massage-hair {
+    left: 0%;
+  }
+
+  .gallery {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  div.container {
+    max-width: 310px;
+    height: 193px;
+  }
+
+  .experience-image {
+    max-width: 151px;
+  }
+
+  .massage-naill {
+    padding: 102px 0;
+  }
+
+  .massage-hairr {
+    padding: 65px 0;
+  }
+
+  .massage-facee {
+    padding: 32px 0px;
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Quinstory';
+    src: url('Quinstory-Regular.woff2') format('woff2'),
+        url('Quinstory-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
